@@ -44,11 +44,22 @@
 
                 <!--Message-->
                 <div class="form-group">
-                    <label for="messageTextArea">Message</label>
-                    <textarea class="form-control" id="messageTextArea" rows="3" name="message" placeholder="Your message"></textarea>
+                    <label for="messageTextArea">Details</label>
+                    <textarea class="form-control" id="messageTextArea" rows="3" aria-describedby="messageHelp" name="details" placeholder="Tell us about your project."></textarea>
+                    <small id="messageHelp" class="form-text text-muted">We will <i>never</i> share any of this information with anyone else.</small>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <!--Budget-->
+                <div class="form-group">
+                    <label for="budgetTextArea">Budget Estimate</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">$</div>
+                        <input type="text" class="form-control" id="budgetTextArea" aria-describedby="budgetHelp" placeholder="0.00" name="budget" />
+                    </div>
+                    <small id="budgetHelp" class="form-text text-muted">This does not have to be exact, just a rough estimate.</small>
+                </div>
+
+                <button id="submit-btn" type="submit" class="btn btn-success">Submit</button>
             </form>
         </div>
         <!--End Modal Content-->

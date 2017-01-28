@@ -102,7 +102,11 @@ body {
 .modal form {
     width: 100%;
     text-align: center;
-    padding: 3%;
+    padding: 2% 3%;
+}
+
+#submit-btn:hover {
+    cursor: pointer;
 }
 
 /* Add Animation */
