@@ -1,6 +1,11 @@
 /* List Font */
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
+body {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+
 /* Start Header */
 #header {
     text-align: center;
@@ -27,9 +32,8 @@
     text-decoration: none;
     padding: 3%;
     font-size: 150%;
-    font-family: 'EB Garamond', serif;
-    transition: color .5s;
-    -webkit-transition: color .5s;
+    transition: color .75s;
+    -webkit-transition: color .75s;
 }
 
 #nav li:hover {
@@ -37,3 +41,110 @@
     color: lightgray;
 }
 /* End Nav */
+
+/* Start Inquire */
+#inquire {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+#cta {
+    padding: 10px;
+    border: 2px solid;
+    font-size: 150%;
+    cursor: pointer;
+    transition: color .75s, background-color .75s;
+    -webkit-transition: color .75s, background-color .75s;
+}
+
+#cta:hover {
+    color: white;
+    background-color: black;
+}
+
+#cta:visited {
+    color: black;
+    background-color: white;
+}
+/* End Inquire */
+
+/* Start Modal */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* End Modal */
+
+/* Start Photos */
+#photos img {
+    width: 100%;
+    height: auto;
+}
+
+/* End Photos */

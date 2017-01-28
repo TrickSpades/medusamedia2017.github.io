@@ -3,7 +3,8 @@
 <head>
     <title>Medusa Media</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="js/script,js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://use.fontawesome.com/706a4e6750.js"></script>
 </head>
 <body>
@@ -12,6 +13,29 @@
         <img id="logo" src="img/MedusaSiteHeaderBlack.png" />
     </div>
     <!--End Header-->
+
+    <!--Start Inquire-->
+    <div id="inquire">
+        <a id="cta">Get In Touch</a>
+    </div>
+
+    <!--Start Modal-->
+    <div id="myModal" class="modal">
+
+        <!--Start Modal Content-->
+        <span class="close">&times;</span>
+        <form id="contactform" action="//formspree.io/adarbutel+medusaweb@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your name">
+            <input type="email" name="_replyto" placeholder="Your email">
+            <textarea name="message" placeholder="Your message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+        <!--End Modal Content-->
+
+    </div>
+    <!--End Modal-->
+    <!--End Inquire-->
+
     <!--Start Navigation-->
     <ul id="nav">
         <li>
@@ -25,5 +49,20 @@
         </li>
     </ul>
     <!--End Navigation-->
+
+    <!--Start Web-->
+    <div id="web">
+    </div>
+    <!--End Web-->
+
+    <!--Start Photos-->
+    <div id="photos">
+    </div>
+    <!--End Photos-->
+
+    <!--Start Videos-->
+    <div id="videos">
+    </div>
+    <!--End Videos-->
 </body>
 </html>
