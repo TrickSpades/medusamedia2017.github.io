@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
 body {
-    text-align: center;
-    font-family: 'EB Garamond', serif;
+    font-family: 'EB Garamond', serif !important;
 }
 
 /* Start Header */
@@ -46,6 +45,7 @@ body {
 #inquire {
     margin-top: 25px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 #cta {
@@ -96,7 +96,13 @@ body {
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+}
+
+.modal form {
+    width: 100%;
+    text-align: center;
+    padding: 3%;
 }
 
 /* Add Animation */
