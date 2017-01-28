@@ -1,7 +1,7 @@
-body {
-    background-color: #000;
-}
+/* List Font */
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
+/* Start Header */
 #header {
     text-align: center;
 }
@@ -10,3 +10,30 @@ body {
     width: 150px;
     height: 150px;
 }
+/* End Header */
+
+/* Start Nav */
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#nav li {
+    display: inline;
+    color: black;
+    text-decoration: none;
+    padding: 3%;
+    font-size: 150%;
+    font-family: 'EB Garamond', serif;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+}
+
+#nav li:hover {
+    cursor: pointer;
+    color: lightgray;
+}
+/* End Nav */
