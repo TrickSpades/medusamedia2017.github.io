@@ -39,6 +39,10 @@ body {
     cursor: pointer;
     color: lightgray;
 }
+
+#nav .current {
+    color: lightgray;
+}
 /* End Nav */
 
 /* Start Inquire */
@@ -151,6 +155,10 @@ body {
 }
 /* End Modal */
 
+.page-wrapper {
+    margin: 60px auto;
+}
+
 /* Start Photos */
 #photos img {
     width: 100%;
@@ -158,3 +166,33 @@ body {
 }
 
 /* End Photos */
+
+/* Start Websites */
+#web {
+    text-align: center;
+}
+
+.website .web-link {
+    color: black;
+    text-decoration: none;
+}
+
+.website .web-img {
+    max-width: 800px;
+    width: 60%;
+    height: auto;
+    margin: 20px auto;
+    transition: filter 500ms linear;
+    -webkit-transition: -webkit-filter 500ms linear, width 500ms;
+}
+
+.website .web-img:hover {
+    filter: brightness(65%);
+}
+
+@media (max-width: 800px) {
+    .website .web-img {
+        width: 80%;
+    }
+}
+/* End Websites */
