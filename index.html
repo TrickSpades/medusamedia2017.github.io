@@ -2,13 +2,14 @@
 <html>
 <head>
     <title>Medusa Media</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+
     <script src="https://use.fontawesome.com/706a4e6750.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <!--Start Header-->
@@ -19,59 +20,59 @@
 
     <!--Start Inquire-->
     <div id="inquire">
-        <a id="cta">Get In Touch</a>
-    </div>
+        <a href="#animatedModal" id="cta">Get In Touch</a>
 
     <!--Start Modal-->
-    <div id="myModal" class="modal">
+        <div id="animatedModal">
+            <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+            <div class="close-animatedModal">
+                <i style="color: black; cursor: pointer; margin-top: 10px; margin-bottom: 20px;" class="fa fa-times fa-3x"></i>
+            </div>
 
-        <!--Start Modal Content-->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <form id="contactform" action="//formspree.io/adarbutel+medusaweb@gmail.com" method="POST">
-
-                <!--Name-->
-                <div class="form-group">
-                    <label for="nameInput">Name</label>
-                    <input type="text" class="form-control" id="nameInput" name="name" placeholder="Your name">
-                </div>
-
-                <!--Email-->
-                <div class="form-group">
-                    <label for="emailInput">Email</label>
-                    <input type="email" id="emailInput" class="form-control" name="_replyto" placeholder="Your email">
-                </div>
-
-                <!--Message-->
-                <div class="form-group">
-                    <label for="messageTextArea">Details</label>
-                    <textarea class="form-control" id="messageTextArea" rows="1" aria-describedby="messageHelp" name="details" placeholder="Please briefly tell us about your project."></textarea>
-                    <small id="messageHelp" class="form-text text-muted">We will <i>never</i> share any of this information with anyone else.</small>
-                </div>
-
-                <!--Budget-->
-                <div class="form-group">
-                    <label for="budgetTextArea">Budget Estimate</label>
-                    <div class="input-group">
-                        <div class="input-group-addon">$</div>
-                        <input type="text" class="form-control" id="budgetTextArea" aria-describedby="budgetHelp" placeholder="0.00" name="budget" />
+            <div class="modal-content">
+                <!--Your modal content goes here-->
+                <form id="contact-form" action="//formspree.io/adarbutel+adarbutel@gmail.com" method="POST">
+                    <!--Name-->
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input type="text" class="form-control" id="nameInput" name="name" placeholder="Your name">
                     </div>
-                    <small id="budgetHelp" class="form-text text-muted">This does not have to be exact, just a rough estimate.</small>
-                </div>
 
-                <!--Redirect URL-->
-                <input type="hidden" name="_next" value="https://medusa.media/" />
+                    <!--Email-->
+                    <div class="form-group">
+                        <label for="emailInput">Email</label>
+                        <input type="email" id="emailInput" class="form-control" name="_replyto" placeholder="Your email">
+                    </div>
 
-                <!--Honeypot for spammers-->
-                <input type="text" name="_gotcha" style="display:none" />
+                    <!--Message-->
+                    <div class="form-group">
+                        <label for="messageTextArea">Details</label>
+                        <textarea class="form-control" id="messageTextArea" rows="1" aria-describedby="messageHelp" name="details" placeholder="Please briefly tell me about your project."></textarea>
+                        <small id="messageHelp" class="form-text text-muted">I will <i>never</i> share any of this information with anyone else.</small>
+                    </div>
 
-                <button id="submit-btn" type="submit" class="btn btn-success">Submit</button>
-            </form>
+                    <!--Budget-->
+                    <div class="form-group">
+                        <label for="budgetTextArea">Budget Estimate</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">$</div>
+                            <input type="text" class="form-control" id="budgetTextArea" aria-describedby="budgetHelp" placeholder="0.00" name="budget" />
+                        </div>
+                        <small id="budgetHelp" class="form-text text-muted">This does not have to be exact, just a rough estimate.</small>
+                    </div>
+
+                    <!--Redirect URL-->
+                    <input type="hidden" name="_next" value="https://adarbutel.com/" />
+
+                    <!--Honeypot for spammers-->
+                    <input type="text" name="_gotcha" style="display:none" />
+
+                    <button id="submit-btn" type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
         </div>
-        <!--End Modal Content-->
-
+        <!--End Modal-->
     </div>
-    <!--End Modal-->
     <!--End Inquire-->
 
     <!--Start Navigation-->
@@ -119,5 +120,16 @@
         <h2 style="text-align: center;">Coming soon.</h2>
     </div>
     <!--End Videos-->
+
+<!--Modal-->
+<script src="js/animatedModal.min.js"></script>
+<script>
+    $("#cta").animatedModal({
+        modalTarget: "animatedModal",
+        color: "#FFF",
+        animatedIn: 'lightSpeedIn',
+        animatedOut: 'lightSpeedOut',
+    });
+</script>
 </body>
 </html>
