@@ -145,13 +145,38 @@ body {
 /* End Modal */
 
 .page-wrapper {
-    margin: 60px auto;
+    margin: 25px auto;
 }
 
 /* Start Photos */
+#photos {
+    text-align: center;
+}
+
 #photos img {
-    width: 100%;
+    margin-top: 10px;
+    width: 50%;
     height: auto;
+    transition: width .75s;
+    -webkit-transition: width .75s;
+}
+
+@media (max-width: 1500px) {
+    #photos img {
+        width: 60%
+    }
+}
+
+@media (max-width: 1100px) {
+    #photos img {
+        width: 70%
+    }
+}
+
+@media (max-width: 700px) {
+    #photos img {
+        width: 80%
+    }
 }
 
 /* End Photos */
