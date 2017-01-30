@@ -172,6 +172,10 @@ body {
     text-align: center;
 }
 
+.website {
+    margin-bottom: 45px;
+}
+
 .website .web-link {
     color: black;
     text-decoration: none;
