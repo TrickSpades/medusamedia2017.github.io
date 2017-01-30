@@ -166,13 +166,17 @@ body {
     max-width: 800px;
     width: 60%;
     height: auto;
-    margin: 20px auto;
+    margin: 20px auto auto auto;
     transition: filter 500ms linear;
     -webkit-transition: -webkit-filter 500ms linear, width 500ms;
 }
 
 .website .web-img:hover {
     filter: brightness(65%);
+}
+
+.website h4 {
+    font-size: 135%;
 }
 
 @media (max-width: 800px) {
