@@ -1,11 +1,13 @@
 var showPage = function(page) {
     var about = document.getElementById("about");
+    var logos = document.getElementById("logos");
     var photos = document.getElementById("photos");
     var videos = document.getElementById("videos");
     var web = document.getElementById("web");
 
     $("#about-btn").removeClass("current");
     $("#photos-btn").removeClass("current");
+    $("#logos-btn").removeClass("current");
     $("#videos-btn").removeClass("current");
     $("#web-btn").removeClass("current");
 
@@ -13,6 +15,10 @@ var showPage = function(page) {
         case "about":
             about.style.display = "block";
             $("#about-btn").addClass("current");
+            break;
+        case "logos":
+            logos.style.display = "block";
+            $("#logos-btn").addClass("current");
             break;
         case "photos":
             photos.style.display = "block";
@@ -30,12 +36,14 @@ var showPage = function(page) {
 }
 
 var hidePages = function() {
-    var about = document.getElementById("about")
+    var about = document.getElementById("about");
+    var logos = document.getElementById("logos");
     var photos = document.getElementById("photos");
     var videos = document.getElementById("videos");
     var web = document.getElementById("web");
 
     about.style.display = "none";
+    logos.style.display = "none";
     photos.style.display = "none";
     videos.style.display = "none";
     web.style.display = "none";
@@ -43,6 +51,7 @@ var hidePages = function() {
 
 var setupButtons = function() {
     var about = document.getElementById("about-btn");
+    var logos = document.getElementById("logos-btn");
     var photos = document.getElementById('photos-btn');
     var videos = document.getElementById('videos-btn');
     var web = document.getElementById('web-btn');
@@ -50,6 +59,11 @@ var setupButtons = function() {
     about.onclick = function() {
         hidePages();
         showPage("about");
+    }
+
+    logos.onclick = function() {
+        hidePages();
+        showPage("logos");
     }
 
     photos.onclick = function() {

@@ -164,6 +164,58 @@ body {
     margin: 25px auto 50px auto;
 }
 
+.name {
+    font-size: 120%;
+}
+
+.team-member a {
+    margin: 0 3% 0 3%;
+    color: black;
+    transition: color 1s;
+    -webkit-transition: color 1s;
+}
+
+.team-member #first {
+    margin-left: 0;
+}
+
+.team-member a:hover {
+    color: lightgray;
+}
+
+/* Start Logos */
+#logos {
+    text-align: center;
+}
+
+#logos img {
+    margin-top: 10px;
+    width: 50%;
+    max-width: 900px;
+    height: auto;
+    transition: width .75s;
+    -webkit-transition: width .75s;
+}
+
+@media (max-width: 1500px) {
+    #logos img {
+        width: 55%
+    }
+}
+
+@media (max-width: 1100px) {
+    #logos img {
+        width: 60%
+    }
+}
+
+@media (max-width: 700px) {
+    #logos img {
+        width: 75%
+    }
+}
+/* End Logos */
+
 /* Start Photos */
 #photos {
     text-align: center;
