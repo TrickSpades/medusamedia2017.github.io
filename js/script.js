@@ -1,16 +1,18 @@
 var showPage = function(page) {
-    var web = document.getElementById("web");
+    var about = document.getElementById("about");
     var photos = document.getElementById("photos");
     var videos = document.getElementById("videos");
+    var web = document.getElementById("web");
 
-    $("#web-btn").removeClass("current");
+    $("#about-btn").removeClass("current");
     $("#photos-btn").removeClass("current");
     $("#videos-btn").removeClass("current");
+    $("#web-btn").removeClass("current");
 
     switch(page) {
-        case "web":
-            web.style.display = "block";
-            $("#web-btn").addClass("current");
+        case "about":
+            about.style.display = "block";
+            $("#about-btn").addClass("current");
             break;
         case "photos":
             photos.style.display = "block";
@@ -20,27 +22,34 @@ var showPage = function(page) {
             videos.style.display = "block";
             $("#videos-btn").addClass("current");
             break;
+        case "web":
+            web.style.display = "block";
+            $("#web-btn").addClass("current");
+            break;
     }
 }
 
 var hidePages = function() {
-    var web = document.getElementById("web");
+    var about = document.getElementById("about")
     var photos = document.getElementById("photos");
     var videos = document.getElementById("videos");
+    var web = document.getElementById("web");
 
-    web.style.display = "none";
+    about.style.display = "none";
     photos.style.display = "none";
     videos.style.display = "none";
+    web.style.display = "none";
 }
 
 var setupButtons = function() {
-    var web = document.getElementById('web-btn');
+    var about = document.getElementById("about-btn");
     var photos = document.getElementById('photos-btn');
     var videos = document.getElementById('videos-btn');
+    var web = document.getElementById('web-btn');
 
-    web.onclick = function() {
+    about.onclick = function() {
         hidePages();
-        showPage("web");
+        showPage("about");
     }
 
     photos.onclick = function() {
@@ -51,6 +60,11 @@ var setupButtons = function() {
     videos.onclick = function() {
         hidePages();
         showPage("videos");
+    }
+
+    web.onclick = function() {
+        hidePages();
+        showPage("web");
     }
 }
 

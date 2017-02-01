@@ -136,6 +136,34 @@ body {
     margin: 25px auto;
 }
 
+/* Start About */
+#about {
+    text-align: center;
+    padding: 0 5% 0 5%;
+}
+
+#about h2 {
+    font-size: 25px;
+}
+
+#about p {
+    font-size: 18px;
+}
+
+#team-wrapper {
+    margin-top: 65px;
+}
+
+#team-wrapper .team-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.team-member {
+    margin: 25px auto 50px auto;
+}
+
 /* Start Photos */
 #photos {
     text-align: center;
