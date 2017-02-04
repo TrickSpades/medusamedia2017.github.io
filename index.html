@@ -3,242 +3,189 @@
 <head>
     <title>Medusa Media</title>
     <meta name="description" content="Medusa Media is a web development, photography, and videography agency in Los Angeles, CA." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="shortcut icon" type="image/png" href="img/FavIcon32x32.png">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
 
     <script src="https://use.fontawesome.com/706a4e6750.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
 </head>
 <body>
-    <!--Start Header-->
-    <div id="header">
-        <a href="https://medusa.media/"><img id="logo" src="img/MedusaSiteHeaderBlack.png" /></a>
-    </div>
-    <!--End Header-->
+    <!--Start Wrapper-->
+    <div class="wrapper">
 
-    <!--Start Inquire-->
-    <div id="inquire">
-        <a href="#animatedModal" id="cta">Get In Touch</a>
+        <!--Start Home-->
+        <section id="home">
+            <!--Start Header-->
+            <div id="header">
 
-    <!--Start Modal-->
-        <div id="animatedModal">
-            <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-            <div class="close-animatedModal">
-                <i style="color: black; cursor: pointer; margin-top: 10px; margin-bottom: 20px;" class="fa fa-times fa-3x"></i>
+                <!--Hidden Logo-->
+                <a id="hidden-logo" style="display: none; margin: 15px auto;" class="page-link" href="#home"><img id="logo" src="img/MedusaWhiteNoText900.png" /></a>
+
+                <ul id="nav">
+                    <li>
+                        <a class="page-link" href="#home">HOME</a>
+                    </li>
+                    <li>
+                        <a class="page-link" href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="page-link" href="#bts">BTS</a>
+                    </li>
+                    <li>
+                        <a class="contact-btn" href="#contact-modal">CONTACT</a>
+                    </li>
+                    <li>
+                        <a class="page-link" href="#home"><img id="logo" src="img/MedusaWhiteNoText900.png" /></a>
+                    </li>
+                    <li>
+                        <a href="./film.html">FILM</a>
+                    </li>
+                    <li>
+                        <a href="./logos.html">LOGOS</a>
+                    </li>
+                    <li>
+                        <a href="./photos.html">PHOTOS</a>
+                    </li>
+                    <li>
+                        <a href="./websites.html">WEBSITES</a>
+                    </li>
+                </ul>
             </div>
 
-            <div class="modal-content">
-                <!--Your modal content goes here-->
-                <form id="contact-form" action="//formspree.io/adarbutel+adarbutel@gmail.com" method="POST">
-                    <!--Name-->
-                    <div class="form-group">
-                        <label for="nameInput">Name</label>
-                        <input type="text" class="form-control" id="nameInput" name="name" placeholder="Your name">
-                    </div>
+            <!--Start Nav Modal-->
+            <a id="nav-hamburger" href="#nav-modal"><i id="default-modal-btn" class="fa fa-bars fa-2x circle-icon"></i></a>
 
-                    <!--Email-->
-                    <div class="form-group">
-                        <label for="emailInput">Email</label>
-                        <input type="email" id="emailInput" class="form-control" name="_replyto" placeholder="Your email">
-                    </div>
+            <div id="nav-modal">
+                <div class="close-nav-modal">
+                    <i id="close-modal-btn" class="fa fa-times fa-2x circle-icon"></i>
+                </div>
 
-                    <!--Message-->
-                    <div class="form-group">
-                        <label for="messageTextArea">Details</label>
-                        <textarea class="form-control" id="messageTextArea" rows="1" aria-describedby="messageHelp" name="details" placeholder="Please briefly tell us about your project."></textarea>
-                        <small id="messageHelp" class="form-text text-muted">We will <i>never</i> share any of this information with anyone else.</small>
-                    </div>
+                <div class="modal-content">
+                    <p id="nav-modal-text">
+                        <a class="page-link" href="#home">HOME</a>
+                        <br />
+                        <a class="page-link" href="#about">ABOUT</a>
+                        <br />
+                        <a class="page-link" href="#bts">BTS</a>
+                        <br />
+                        <a class="contact-btn" href="#contact-modal">CONTACT</a>
+                        <br />
+                        <a href="./film.html">FILM</a>
+                        <br />
+                        <a href="./logos.html">LOGOS</a>
+                        <br />
+                        <a href="./photos.html">PHOTOS</a>
+                        <br />
+                        <a href="./websites.html">WEBSITES</a>
+                    </p>
+                </div>
+            </div>
+            <!--End Nav Modal-->
 
-                    <!--Budget-->
-                    <div class="form-group">
-                        <label for="budgetTextArea">Budget Estimate</label>
-                        <div class="input-group">
-                            <div class="input-group-addon">$</div>
-                            <input type="text" class="form-control" id="budgetTextArea" aria-describedby="budgetHelp" placeholder="0.00" name="budget" />
+            <!--Start Contact Modal-->
+            <div id="contact-modal">
+                <div class="close-contact-modal">
+                    <i id="close-modal-btn" class="fa fa-times fa-2x circle-icon"></i>
+                </div>
+
+                <div class="modal-content">
+                    <h1 id="contact-title">CONTACT</h1>
+                    <form id="contact-form" action="https://formspree.io/medusamedia2017@gmail.com+site.com" method="POST">
+
+                    <div class="row form-row">
+                        <div class="col-xs-12 col-sm-6">
+                            <input type="text" name="name" class="form-control" placeholder="Name">
                         </div>
-                        <small id="budgetHelp" class="form-text text-muted">This does not have to be exact, just a rough estimate.</small>
+                        <div class="col-xs-12 col-sm-6">
+                            <input type="email" name="org" class="form-control" placeholder="Company or Organization">
+                        </div>
                     </div>
 
-                    <!--Redirect URL-->
-                    <input type="hidden" name="_next" value="https://adarbutel.com/" />
+                    <div class="row form-row">
+                        <div class="col-xs-12 col-sm-6">
+                            <input type="email" name="contact" class="form-control" placeholder="Contact (Phone Number, E-Mail, Social Media)">
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <input type="text" name="source" class="form-control" placeholder="How did you hear about us?">
+                        </div>
+                    </div>
 
-                    <!--Honeypot for spammers-->
+                    <textarea rows="3" class="form-control" placeholder="Please tell us a little bit about your project including timeline, budget, and goals."></textarea>
+
+                    <input type="hidden" name="_next" value="./thanks.html" />
                     <input type="text" name="_gotcha" style="display:none" />
 
-                    <button id="submit-btn" type="submit" class="cta-btn"><b>Submit</b></button>
-                </form>
+                    <input id="submit-btn" type="submit" value="Submit" />
+
+                    </form>
+                </div>
             </div>
-        </div>
-        <!--End Modal-->
-    </div>
-    <!--End Inquire-->
+            <!--End Contact Modal-->
 
-    <!--Start Navigation-->
-    <ul id="nav">
-        <li id="about-btn" class="current">
-            About
-        </li>
-        <li id="videos-btn">
-            Film
-        </li>
-        <li id="logos-btn">
-            Logos
-        </li>
-        <li id="photos-btn">
-            Photos
-        </li>
-        <li id="web-btn">
-            Web
-        </li>
-    </ul>
-    <!--End Navigation-->
+            <!--End Header-->
 
-    <!--Start About-->
-    <div class="page-wrapper" id="about">
-        <h1>About</h1>
-        <h2>Medusa Media is a multi-purpose agency designed to create tactical and effective media.</h2>
-        <p>Based in Los Angeles, CA, Medusa Media offers digital solutions to small and large and businesses with services including: Logo Design, Photography, Videography, and Web Development. We strive to create timeless products that will last.
+            <!--Start Home Content-->
+            <div class="cta-container">
+                <a id="home-cta" class="page-link" href="#about" target="_blank">WHO WE ARE</a>
+            </div>
 
-        <hr />
-
-        <div id="team-wrapper">
-            <h2>Team</h2>
-
-            <div class="team-member">
-                <img class="team-img" src="https://pbs.twimg.com/profile_images/825793641876639744/qrPxzHXZ_400x400.jpg" />
+            <div class="text-container">
+                <h1 id="home-title">MEDUSA MEDIA</h1>
                 <p>
-                    <b class="name">Adar Butel</b>
-                    <br />
-                    When I was 16, I took the California High School Proficiency Exam to get out of high school early, which is when I decided to dedicate my time to mastering coding, design, and business. I'm a self taught designer and web developer. I'm also very interested in business and managing. The main role I see for myself in this company is making sure our clients are completely satisfied, while maintaining the day to day operations and managing projects that fall into my skill set.
-                    <br />
-                    <br />
-                    <a id="first" href="https://twitter.com/AdarButel" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                    <a href="https://instagram.com/AdarButel" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a id="first" href="https://www.instagram.com/medusa.media/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                    <a href="https://www.twitter.com/MedusaMediaLA/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
                 </p>
             </div>
+            <!--End Home Content-->
+        </section>
+        <!--End Home-->
 
-            <div class="team-member">
-                <img class="team-img" src="https://pbs.twimg.com/profile_images/825206777855610880/mTsu6ch9_400x400.jpg" />
-                <p>
-                    <b class="name">Brandon Bolosky</b>
-                    <br />
-                    I am an 18 year old filmmaker/ Photographer from Los Angeles, CA. I am currently attending college to obtain a BSN & will be minoring in film. I started film & photography my senior year in high school, & since then have continued to develop my skills in cinematography & photography. Many of my projects have consisted of music concerts, rappers, & personal travels. I look to extend my abilities into further categories such as weddings, sports, parties, etc.
-                    <br />
-                    <br />
-                    <a id="first" href="https://twitter.com/brandonbolosky" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                    <a href="https://instagram.com/brandonbolosky" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-                </p>
+        <!--Start About-->
+        <section id="about" class="page-wrapper">
+            <h1 class="title">WHO WE ARE</h1>
+            <p>
+                Based in Los Angeles, CA, Medusa Media offers digital solutions to small and large and businesses with services including: Logo Design, Photography, Videography, and Web Development. We strive to create timeless products that will last.
+            </p>
+
+            <div class="cta-container">
+                <a id="about-cta" class="page-link contact-btn" href="" target="_blank">START A PROJECT</a>
             </div>
+        </section>
+        <!--End About-->
 
-            <div class="team-member">
-                <img class="team-img" src="https://pbs.twimg.com/profile_images/754383324861177856/QVXM575p_400x400.jpg" />
-                <p>
-                    <b class="name">Ryan Sepehripour</b>
-                    <br />
-                    I am 18 years old, born and raised in Los Angeles, California. After a spinal injury that ended my football career, at 17, I also took the California High School Proficiency Exam to attend Moorpark Community College where I studied Business. My interests include marketing and technology. My goal for Medusa Media is to eventually be something much bigger than a media company, rather to be a platform/brand that will give opportunity and work for anyone with the minimal required skills to collaborate with others and acquire business as a Medusa Team.
-                    <br />
-                    <br />
-                    <a id="first" href="https://twitter.com/RyanSeperi" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                    <a href="https://instagram.com/Ryan_Seperi" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-                </p>
-            </div>
-        </div>
+        <!--Start BTS-->
+        <section id="bts" class="page-wrapper">
+            <h1 class="title">BEHIND THE SCENES</h1>
+            <a href="https://www.youtube.com/channel/UClA-ygAL8AIPYeceUJBbOvQ?&ab_channel=MedusaMedia" target="_blank"><h2>WATCH</h2></a>
+        </section>
+        <!--End BTS-->
     </div>
-    <!--End About-->
+    <!--End Wrapper-->
 
-    <!--Start Logos-->
-    <div class="page-wrapper" id="logos" style="display: none;">
-        <h1>Logos</h1>
-        <img src="img/logos/BlackAdar900.png" />
-        <br />
-        <img src="img/logos/BlackMedusa900.png" />
-        <br />
-        <img src="img/logos/AdarShift900.png" />
-        <br />
-        <img src="img/logos/AdarRCB900.png" />
-        <br />
-        <img src="img/logos/AdarGenZi900.png" />
-    </div>
-    <!--End Logos-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script>
+        $("#nav-hamburger").animatedModal({
+            modalTarget: "nav-modal",
+            animatedIn: "fadeInDown",
+            animatedOut: "fadeOutUp",
+            color: "#000",
+            overflow: "hidden"
+        });
+    </script>
 
-    <!--Start Photos-->
-    <div class="page-wrapper" id="photos" style="display: none;">
-        <h1>Photos</h1>
-        <img src="img/photos/brandon0.JPG" />
-        <img src="img/photos/brandon1.JPG" />
-        <img src="img/photos/brandon2.JPG" />
-        <img src="img/photos/brandon3.JPG" />
-        <img src="img/photos/brandon4.JPG" />
-        <img src="img/photos/brandon5.JPG" />
-        <img src="img/photos/brandon6.JPG" />
-        <img src="img/photos/brandon7.JPG" />
-        <img src="img/photos/brandon8.JPG" />
-        <img src="img/photos/brandon9.JPG" />
-        <img src="img/photos/brandon10.JPG" />
-        <img src="img/photos/brandon11.JPG" />
-        <img src="img/photos/brandon12.JPG" />
-        <img src="img/photos/brandon13.JPG" />
-        <img src="img/photos/brandon14.JPG" />
-        <img src="img/photos/brandon15.JPG" />
-        <img src="img/photos/brandon16.JPG" />
-        <img src="img/photos/brandon17.JPG" />
-        <img src="img/photos/brandon18.JPG" />
-        <img src="img/photos/brandon19.JPG" />
-        <img src="img/photos/brandon20.JPG" />
-        <img src="img/photos/brandon21.JPG" />
-        <img src="img/photos/brandon22.JPG" />
-        <img src="img/photos/brandon23.JPG" />
-        <img src="img/photos/brandon24.JPG" />
-        <img src="img/photos/brandon25.JPG" />
-        <img src="img/photos/brandon26.JPG" />
-        <img src="img/photos/brandon27.JPG" />
-        <img src="img/photos/brandon28.JPG" />
-        <img src="img/photos/brandon29.JPG" />
-        <img src="img/photos/brandon30.JPG" />
-        <img src="img/photos/brandon31.JPG" />
-
-    </div>
-    <!--End Photos-->
-
-    <!--Start Videos-->
-    <div class="page-wrapper" id="videos" style="display: none;">
-        <h1>Film</h1>
-        <h2 style="text-align: center;">Coming soon.</h2>
-    </div>
-    <!--End Videos-->
-
-    <!--Start Web-->
-    <div class="page-wrapper" id="web" style="display: none;">
-        <h1>Web</h1>
-        <div class="website">
-            <a class="web-link" target="_blank" href="https://adarbutel.com/">
-                <img class="web-img" src="https://i.gyazo.com/53da11bf9a7a1a651325b9c3df639e99.png" />
-                <h4>Adar Butel Landing Page</h4>
-            </a>
-        </div>
-
-        <div class="website">
-            <a class="web-link" target="_blank" href="https://adarbutel.com/CoryWharton/">
-                <img class="web-img" src="https://i.gyazo.com/3acba772496d19863b7d759743c0688b.png" />
-                <h4>Cory Wharton Landing Page</h4>
-            </a>
-        </div>
-    </div>
-    <!--End Web-->
-
-<!--Modal-->
-<script src="js/animatedModal.min.js"></script>
-<script>
-    $("#cta").animatedModal({
-        modalTarget: "animatedModal",
-        color: "#FFF",
-        animatedIn: 'fadeIn',
-        animatedOut: 'fadeOut',
-    });
-</script>
+    <script>
+        $(".contact-btn").animatedModal({
+            modalTarget: "contact-modal",
+            animatedIn: "fadeIn",
+            animatedOut: "fadeOut",
+            color: "#000"
+        });
+    </script>
 </body>
 </html>
