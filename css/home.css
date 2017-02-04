@@ -407,11 +407,6 @@ ul#nav li a:hover {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    transition: filter 1s;
-}
-
-.photo img:hover {
-    filter: brightness(55%);
 }
 
 .photo .logo {
