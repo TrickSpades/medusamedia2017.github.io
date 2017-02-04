@@ -213,7 +213,7 @@ ul#nav li a:hover {
     padding: 15px 45px;
     border-radius: 45px;
     border: 2px solid white;
-    transition: background-color 1s, color 1s;
+    transition: background-color 1s, color 1s, margin 1s;
 }
 
 #about-cta:hover {
@@ -224,17 +224,26 @@ ul#nav li a:hover {
 #about p {
     font-size: 160%;
     padding: 0 10%;
+    transition: font-size 1s;
 }
 
 #about .title {
     font-size: 80px;
-    margin: 200px auto auto auto;
-    transition: font-size .5s;
+    margin: 50px auto auto auto;
+    transition: font-size 1s;
 }
 
 @media (max-width: 960px) {
     #about .title {
         font-size: 55px;
+    }
+
+    #about p {
+        font-size: 120%;
+    }
+
+    #about-cta {
+        margin: 35px auto auto auto;
     }
 }
 
