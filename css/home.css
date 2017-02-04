@@ -137,6 +137,7 @@ ul#nav li a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: scroll;
     position: relative;
     height: 100vh;
     width: 100%;
@@ -198,6 +199,7 @@ ul#nav li a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: scroll;
     position: relative;
     height: 100vh;
     width: 100%;
@@ -261,6 +263,7 @@ ul#nav li a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: scroll;
     position: relative;
     height: 100vh;
     width: 100%;
