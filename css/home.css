@@ -132,7 +132,7 @@ ul#nav li a:hover {
 
 /* Start Home */
 #home {
-    background: url('../img/bg/home.JPG') no-repeat center center fixed;
+    background: url('../img/bg/home_opt.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -194,7 +194,7 @@ ul#nav li a:hover {
 
 /* Start About */
 #about {
-    background: url('../img/bg/about.JPG') no-repeat center center fixed;
+    background: url('../img/bg/about_opt.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -258,7 +258,7 @@ ul#nav li a:hover {
 
 /* Start BTS */
 #bts {
-    background: url('../img/bg/bts.JPG') no-repeat center center fixed;
+    background: url('../img/bg/bts_opt.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
