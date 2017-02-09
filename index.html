@@ -145,21 +145,24 @@
 
         <!--Start About-->
         <section id="about" class="page-wrapper">
-            <h1 class="title">WHO WE ARE</h1>
-            <p>
-                Based in Los Angeles, CA, Medusa Media offers digital solutions to small and large businesses with services including: Logo Design, Photography, Videography, and Web Development. We strive to create timeless products that will last.
-            </p>
-
-            <div class="cta-container">
-                <a id="about-cta" class="page-link contact-btn" href="" target="_blank">START A PROJECT</a>
+            <div class="lazy">
+                <h1 class="title">WHO WE ARE</h1>
+                <p>
+                    Based in Los Angeles, CA, Medusa Media offers digital solutions to small and large businesses with services including: Logo Design, Photography, Videography, and Web Development. We strive to create timeless products that will last.
+                </p>
+                <div class="cta-container">
+                    <a id="about-cta" class="contact-btn" href="" target="_blank">START A PROJECT</a>
+                </div>
             </div>
         </section>
         <!--End About-->
 
         <!--Start BTS-->
         <section id="bts" class="page-wrapper">
-            <h1 class="title">BEHIND THE SCENES</h1>
-            <a href="https://www.youtube.com/channel/UClA-ygAL8AIPYeceUJBbOvQ?&ab_channel=MedusaMedia" target="_blank"><h2>WATCH</h2></a>
+            <div class="lazy">
+                <h1 class="title">BEHIND THE SCENES</h1>
+                <a href="https://www.youtube.com/channel/UClA-ygAL8AIPYeceUJBbOvQ?&ab_channel=MedusaMedia" target="_blank"><h2>WATCH</h2></a>
+            </div>
         </section>
         <!--End BTS-->
     </div>
@@ -169,6 +172,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/home.js"></script>
     <script src="js/animatedModal.min.js"></script>
+    <script src="js/jquery.viewportchecker.js"></script>
     <script>
         $("#nav-hamburger").animatedModal({
             modalTarget: "nav-modal",

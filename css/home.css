@@ -26,6 +26,16 @@ body {
 .modal-content {
     text-align: center;
 }
+
+.lazy {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.visible {
+    opacity: 1;
+    transition: all 1s;
+}
 /* Start Header */
 #header {
     text-align: center;

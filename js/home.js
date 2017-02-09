@@ -11,4 +11,9 @@ $(document).ready(function() {
     $("#nav-modal-text a").click(function() {
         $(".close-nav-modal").click();
     })
-})
+
+    $(".lazy").viewportChecker({
+        classToAdd: "visible",
+        classToRemove: "lazy"
+    });
+});
