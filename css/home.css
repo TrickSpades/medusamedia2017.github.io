@@ -189,6 +189,12 @@ ul#nav li a:hover {
     font-size: 14px;
 }
 
+@media (max-width: 450px) {
+    #home-title {
+        font-size: 10px;
+    }
+}
+
 #home .text-container p a {
     margin: 0 3% 0 3%;
     color: lightgray;
