@@ -8,12 +8,15 @@ $(document).on('click', '.page-link', function(event){
 });
 
 $(document).ready(function() {
-    $("#nav-modal-text a").click(function() {
-        $(".close-nav-modal").click();
-    })
+  $("#contact-modal").css("display", "block");
+  $("#nav-modal").css("display", "block");
 
-    $(".lazy").viewportChecker({
-        classToAdd: "visible",
-        classToRemove: "lazy"
-    });
+  $("#nav-modal-text a").click(function() {
+      $(".close-nav-modal").click();
+  });
+
+  $(".lazy").viewportChecker({
+      classToAdd: "visible",
+      classToRemove: "lazy"
+  });
 });
